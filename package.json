@@ -1,0 +1,30 @@
+{
+  "name": "genclik-sofrasi-whatsapp-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gençlik Sofrası için WhatsApp günlük bilgilendirme botu (WhatsApp Cloud API)",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "send:daily": "node src/scripts/sendDaily.js",
+    "list:groups": "node src/scripts/listGroups.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
